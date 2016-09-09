@@ -305,10 +305,12 @@ BubbleTree.Bubbles.Icon = function(node, bubblechart, origin, radius, angle, col
 	 */
 	me.onclick = function(e) {
 		var me = this;
-		me.bc.onNodeClick(me.node);
-		//if (me.node.children.length > 1) {
+		try {
+			me.bc.onNodeClick(me.node);
+			//if (me.node.children.length > 1) {
 			me.bc.navigateTo(me.node);
-		//}
+			//}
+		} catch (e) {}
 	};
 
 	me.onhover = function(e) {

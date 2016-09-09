@@ -61,11 +61,13 @@ BubbleTree.Bubbles.Plain = function(node, bubblechart, origin, radius, angle, co
 	 */
 	me.onclick = function(e) {
 		var me = this;
-		me.bc.onNodeClick(me.node);
+		try {
+			me.bc.onNodeClick(me.node);
 
-		//if (me.node.children.length > 1) {
+			//if (me.node.children.length > 1) {
 			me.bc.navigateTo(me.node);
-		//}
+			//}
+		} catch (e) {}
 	};
 
 	me.onhover = function(e) {
