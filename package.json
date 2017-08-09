@@ -30,7 +30,7 @@
   "dependencies": {
     "jquery": "^1.11.3",
     "webpack-raphael": "^2.1.4",
-    "tween.js": "^16.3.1"
+    "@tweenjs/tween.js": "^16.3.1"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
